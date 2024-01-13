@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/1xipg02Wu8s?si=7kEH9PsKU2-nLyVN"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis,
+      necessitatibus? Ab voluptatum labore modi, vero non porro iusto cupiditate
+      repellendus cum sunt? Assumenda ipsa aspernatur, sint accusamus recusandae
+      quasi asperiores?
+    </p>
+
+    <audio
+      src="./media/NIKI - Backburner (Official Music Video).mp4"
+      controls
+    ></audio>
+
+    <button onclick="dayMode()">Day</button>
+    <button onclick="niteMode()">Nite</button>
+    <button onclick="pinkMode()">Pink</button>
+  </body>
+  <script>
+    function dayMode() {
+      document.querySelector("body").style.color = "black";
+      document.querySelector("body").style.backgroundColor = "white";
+    }
+    function niteMode() {
+      document.querySelector("body").style.color = "white";
+      document.querySelector("body").style.backgroundColor = "black";
+    }
+    function pinkMode() {
+      document.querySelector("body").style.color = "black";
+      document.querySelector("body").style.backgroundColor = "pink";
+    }
+  </script>
+</html>

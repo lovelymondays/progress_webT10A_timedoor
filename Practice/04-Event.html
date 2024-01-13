@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div {
+        overflow: scroll;
+        width: 250px;
+        height: 250px;
+      }
+    </style>
+  </head>
+  <body onkeydown="scrollingBack()">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Patrick_Star.svg/440px-Patrick_Star.svg.png"
+      alt="gambar"
+      width="100"
+      height="auto"
+      onclick="rotateGIF(this)"
+      onmouseout="rotateBack(this)"
+    />
+
+    <div id="div" onscroll="scrolling()">
+      <h3>Belajar Event Handler</h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste eum est
+        illum assumenda voluptatibus? Minus tenetur illo asperiores, fugiat
+        velit provident nisi at? Doloribus harum in, delectus facere quaerat
+        veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Perspiciatis quasi doloremque nihil assumenda atque, laborum id porro
+        rerum voluptas aliquid modi, rem est fugit totam dolores officia ipsam
+        sed hic. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quibusdam, fugiat incidunt harum sed quae facere distinctio corporis
+        qui, aliquid rem assumenda rerum sint enim accusantium molestiae earum
+        corrupti quis temporibus?
+      </p>
+    </div>
+  </body>
+
+  <script>
+    function rotateGIF(element) {
+      element.style.transform = "translate(5px, 5px)";
+      element.style.transform = "rotate(180deg)";
+    }
+    function rotateBack(element) {
+      element.style.transform = "translate(0, 0)";
+      element.style.transform = "rotate(0deg)";
+    }
+
+    function scrolling() {
+      document.getElementById("div").style.color = "blue";
+      document.getElementById("div").style.backgroundColor = "black";
+    }
+
+    function scrollingBack() {
+      document.getElementById("div").style.color = "red";
+      document.getElementById("div").style.backgroundColor = "gray";
+    }
+ 
+    var paragraph = document.querySelector("p");
+    paragraph.addEventListener("click", function () {
+      paragraph.style.backgroundColor = "lightblue";
+    });
+
+  </script>
+</html>

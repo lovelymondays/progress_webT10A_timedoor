@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubble</title>
+
+    <style>
+      input {
+        margin: 0 15px 5px;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid cadetblue;
+        width: 450px;
+      }
+      .submit {
+        border-radius: 5px;
+        padding: 6px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" placeholder="Your Name" />
+
+    <h3>Jawablah Teka-Teki berikut!</h3>
+    <p>1. Kalau sendiri ada 4 kaki, kalau berdua ada 8 kaki. Apakah itu?</p>
+    <input type="text" placeholder="Jawaban" />
+    <p>2. Kunci apa yang bisa membuat orang berjoget India?</p>
+    <input type="text" placeholder="Jawaban" />
+    <p>
+      3. Semakin banyak kamu mengambil, semakin banyak yang tersisa. Apakah itu?
+    </p>
+    <input type="text" placeholder="Jawaban" /> <br />
+    <input
+      type="submit"
+      class="submit"
+      onclick="
+sendData()"
+    />
+  </body>
+
+  <script>
+    var close = document.querySelectorAll(".close");
+    for (let i = 0; i < close.length; i++) {
+      close[i].addEventListener("click", function (e) {
+        e.target.parentElement.style.display = "none";
+        e.preventDefault();
+        e.stopPropagation();
+      });
+    }z
+
+    var item = document.querySelectorAll(".item");
+    for (let i = 0; i < item.length; i++) {
+      item[i].addEventListener("click", function (e) {
+        alert("Item " + i + " clicked");
+      });
+    }
+
+    function send() {
+      alert("Jawaban Berhasil Dikirim!");
+    }
+  </script>
+</html>

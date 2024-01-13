@@ -1,0 +1,218 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Arji</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Patrick_Star.svg/440px-Patrick_Star.svg.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/f90068558c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section id="jumbotron">
+        <div class="jumbotron">
+          <h1 class="jumbotron-title" onmouseover="changeText2(this)">
+            Tips Coding !!
+          </h1>
+          <div class="header-flex">
+            <div>
+              <h2 class="jumbotron-text">
+                Baru di programming? <br />
+                Belajar lewat pengembangan
+                <span style="color: blueviolet">Game dan Web</span>
+                Sederhana
+              </h2>
+
+              <div class="mini-text-flex">
+                <p class="mini-text">Belajar Programming Awal</p>
+                <button id="icon-up" class="icon-up" onclick="changeText()">
+                  <i class="far fa-hand-point-up"></i>
+                </button>
+
+                <button id="icon-down" class="icon-down">
+                  <i class="far fa-hand-point-down"></i>
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <img
+                class="jumbotron-img"
+                src="https://assets-global.website-files.com/6100d0111a4ed76bc1b9fd54/62a030850a538782b1755eeb_coding%203.jpg"
+                alt="jumbotron"
+                width="auto"
+                height="300"
+                onmouseover="changeImage(this)"
+                onmouseout="changeImageBack(this)"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="main-content">
+        <aside>
+          <div>
+            <h3 class="aside-title">It’s Arjii</h3>
+            <img
+              class="profile-picture"
+              src="https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/294/2023/09/29/Chika-Member-Generasi-Ketujuh-JKT48-1698070767.png"
+              alt="profile"
+              width="150px"
+              height="150px"
+            />
+
+            <div class="toggle">
+              <button class="btn" id="green" onclick="dayMode()">
+                <i class="fa fa-thumbs-up fa-lg"></i>
+              </button>
+              <button class="btn" id="red" onclick="niteMode()">
+                <i class="fa fa-thumbs-down fa-lg"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="search-tags-container">
+            <div class="input-tag">
+              <h3 class="aside-title">Search Here</h3>
+              <input id="myInput" type="text" placeholder="Search..." />
+              <span class="addBtn" onclick="newElement()"> Search</span>
+            </div>
+            <ul id="myUL" class="search-tags-list">
+              <li class="search-tags-item">HTML</li>
+              <li class="search-tags-item">Code</li>
+            </ul>
+          </div>
+        </aside>
+
+        <div class="content">
+          <article id="maps">
+            <div class="maps">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7789.071410501383!2d139.69715384256418!3d35.6583408654232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b57c35f334f%3A0xfe988e1056a6006a!2sShibuya%20Excel%20Hotel%20Tokyu!5e0!3m2!1sen!2sid!4v1700909774904!5m2!1sen!2sid"
+                width="640"
+                height="640"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </article>
+
+          <article id="maps">
+            <div class="maps">
+              <iframe
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/track/4kkWvBCT6wq5NHoJjYRaPU?utm_source=generator&theme=0"
+                width="100%"
+                height="auto"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </article>
+
+          <article id="video">
+            <div class="item-video">
+              <h3 class="article-title">What is Coding?</h3>
+              <!-- tambahkan video youtube 1 disini -->
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/3LopI4YeC4I?si=uY1OFbiG4yQiYh3w"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <h3 class="article-title">Cosing is Not Difficult!</h3>
+              <!-- tambahkan video youtube 2 disini -->
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/WQn-D-i5lyM?si=LXPe2fdkbQZg7fsd"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </article>
+
+          <article id="my-project">
+            <h3 class="article-title">My project</h3>
+            <div class="project-container">
+              <div class="project">
+                <img src="" alt="" width="300px" height="210px" />
+                <h4 class="project-title">Desert Rally</h4>
+                <p class="project-description">
+                  Game Desert Rally menggunakan platform Scratch
+                </p>
+              </div>
+
+              <div class="project">
+                <img src="" alt="" width="300px" height="210px" />
+                <h4 class="project-title">Desert Rally</h4>
+                <p class="project-description">
+                  Game Desert Rally menggunakan platform Scratch
+                </p>
+              </div>
+            </div>
+            <div class="project-container">
+              <div class="project">
+                <img src="" alt="" width="300px" height="210px" />
+                <h4 class="project-title">Desert Rally</h4>
+                <p class="project-description">
+                  Game Desert Rally menggunakan platform Scratch
+                </p>
+              </div>
+
+              <div class="project">
+                <img src="" alt="" width="300px" height="210px" />
+                <h4 class="project-title">Desert Rally</h4>
+                <p class="project-description">
+                  Game Desert Rally menggunakan platform Scratch
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="main-footer">
+        <h3 class="info-top">Cobee The Junior Programmer</h3>
+        <div class="social-media">
+          <i class="fab fa-instagram-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fas fa-envelope"></i>
+        </div>
+        <p class="info-center">
+          Copyright &copy; 2023. Cobee. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="main.js"></script>
+</html>
